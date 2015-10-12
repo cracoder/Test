@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/layout_bg" >
+
+    <LinearLayout 
+   	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:layout_marginTop="100dp"
+    >
+    </LinearLayout>
+    
+	<!-- 标题的行 -->
+    <LinearLayout 
+        style="@style/defaultSet"
+    	android:layout_gravity="center_horizontal"
+    	android:orientation="vertical" 
+    	android:layout_marginTop="80dp"  
+    >
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title" 
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:shadowRadius="2.75"
+        android:shadowColor="#554932"
+        />
+    </LinearLayout>
+    
+    <!-- 用户名的行 -->
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"   
+    android:gravity="center"
+    >
+       <TextView
+       	style="@style/txt_grey"
+        android:layout_width="60dp"
+        android:text="@string/usrname" 
+       	android:layout_marginRight="10dp"
+        />
+       
+        <EditText
+            android:id="@+id/usrname"
+       		style="@style/txt_grey"
+        	android:hint="请输入用户名"
+          	android:layout_width="180dp"
+        /> 
+   
+	 </LinearLayout>
+	 
+     <!-- 密码的行 -->
+     <LinearLayout 
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+   		 	android:orientation="horizontal"   
+    		android:gravity="center"
+    	>
+       <TextView
+       	style="@style/txt_grey"
+        android:layout_width="60dp"
+        android:text="@string/usrpsw" 
+      	android:layout_marginRight="10dp"
+        />
+       
+        <EditText
+        android:id="@+id/usrpwd"
+        style="@style/txt_grey"
+        android:hint="请输入密码"
+        android:password="true"
+        android:layout_width="180dp"
+    	/> 
+   
+	 </LinearLayout>
+	 
+     <!-- 登录和注册的行 -->
+     <LinearLayout
+        style="@style/defaultSet"
+    	android:orientation="horizontal"   
+   	 	android:padding="10dp"
+    	android:layout_gravity="center_horizontal"
+    	android:layout_marginTop="10dp"
+         >
+        <Button
+            android:id="@+id/regeditBtn"
+            style="@style/buttonstyle"
+            android:text="注册"
+
+            />
+        <Button 
+            android:id="@+id/moreBtn"
+            style="@style/buttonstyle"
+            android:text="更多选项"/>"
+         <Button
+            android:id="@+id/loginBtn"
+            style="@style/buttonstyle"
+            android:text="登录" 
+            />
+         
+    </LinearLayout>
+
+</LinearLayout>

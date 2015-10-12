@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+    	<Spinner
+    	    style="@style/defaultSet"
+    	    android:layout_width="109dp"
+    	    android:entries="@array/searchType" />
+
+    	<EditText 
+    	    style="@style/defaultSet"
+    	    android:hint="输入宝贝"
+    	    android:layout_width="160dp"/>
+
+    	<Button
+    	    style="@style/defaultSet"
+    	    android:layout_width="50dp"
+    	    android:text="搜索" />
+    
+	</LinearLayout>
+
+</RelativeLayout>

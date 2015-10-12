@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#EEEEEE">
+
+    <include android:id="@+id/top"  layout="@layout/search_top" />
+    <include android:id="@+id/mbutton"  layout="@layout/menu_button" />
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/top"
+        >
+        <ImageView 
+            android:layout_width="340dp"
+        	android:layout_height="150dp"
+        	android:background="@drawable/dance"
+        	android:id="@+id/advert"/>"
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical"
+        	android:layout_above="@id/mbutton"
+        >
+        <ImageView 
+            android:layout_width="340dp"
+        	android:layout_height="280dp"
+        	android:background="@drawable/pic"/>   
+    	</RelativeLayout>
+        <!-- 测试数据 -->
+    
+   	
+</RelativeLayout>

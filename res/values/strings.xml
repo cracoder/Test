@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HiTao</string>
+    <string name="title">Hello HiTao!</string>
+    <string name="usrname">用户名:</string>
+    <string name="usrpsw">密　码:</string>
+    
+        <!-- 主屏幕字符串显示 -->
+    <string name="hello">欢迎使用HiTao！</string>
+
+</resources>
